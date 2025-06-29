@@ -1,0 +1,8 @@
+# Virtual environment files:
+venv_uapcar/
+
+# Cached python files:
+**/__pycache__/
+
+# MacOS files:
+.DS_Store

@@ -59,7 +59,7 @@ from uapcar import dataset_iris
 dists = dataset_iris()
 ```
 
-The glyph can be computed by creating a new `Glyph` object and specifying the number of values for `alpha` ($\alpha \in [0, \pi]$) and `beta` ($\beta \in [0, 2\pi]$) for which the glpyh should be evaluated. It is recommended to set `num_alpha` to `91` and `num_beta` to `181`:
+The glyph can be computed by creating a new `Glyph` object and specifying the number of values for `alpha` ($\alpha \in [0, \pi]$) and `beta` ($\beta \in [0, 2\pi]$) for which the glyph should be evaluated. It is recommended to set `num_alpha` to `91` and `num_beta` to `181`:
 
 ```python
 from uapcar import dataset_iris, Glyph

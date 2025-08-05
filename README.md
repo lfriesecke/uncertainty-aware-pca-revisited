@@ -40,7 +40,7 @@ Using a virtual environment for installing the necessary python dependencies is 
    pip install -r requirements.txt
    ```
 
-5. Execute the given code.
+5. Execute the given code - just use one of the provided datasets and export a glyph. If you want to reproduce the Iris glyph, run the `example.py` script.
 
 6. Exit the virtual environment by running:
 

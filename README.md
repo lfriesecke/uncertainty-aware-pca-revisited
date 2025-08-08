@@ -6,47 +6,54 @@ This repository contains the official authors implementation associated with the
 ## Overview
 
 The codebase contains an interface for:
-- computing and exporting a covariance stability glyph, that encodes the stability of the major eigenvectors of an uncertain covariance matrix
-- projecting uncertain datasets to two dimensions, using a sampling-based approach
+- Computing and exporting a covariance stability glyph, that encodes the stability of the major eigenvectors of an uncertain covariance matrix
+- Projecting uncertain datasets to two dimensions, using a sampling-based approach
 
 
 ## Getting started
 
-This code was tested using Python 1.13.
+1. Install [python](https://www.python.org/downloads/). This code was tested using Python 3.13.5.
 
+2. Clone the repository, e.g. using the following command:
 
-### Virtual environment:
+```bash
+git clone https://github.com/lfriesecke/uncertainty-aware-pca-revisited.git
+```
 
-Using a virtual environment for installing the necessary python dependencies is recommended. We used `virtualenv` for this:
+3. Setup a virtual environment and install all required dependencies. We recommend using `virtualenv`:
 
-1. Install `virtualenv` using `pip`
-
-2. Navigate to the project folder and create a virtual environment named `venv_uapcar`:
+   1. Install `virtualenv` using `pip`:
+   ```bash
+   pip install virtualenv
    ```
+
+   2. Navigate to the project root directory and create a virtual environment named `venv_uapcar`:
+   ```bash
    python -m venv venv_uapcar
    ```
 
-3. Activate the virtual environment:
-   
-   ```
+   3. Activate the virtual environment:
+   ```bash
    source venv_uapcar/bin/activate      // on Linux & MacOS
    venv_uapcar/Scripts/activate.bat     // in Windows CMD
    venv_uapcar/Scripts/Activate.ps1     // in Windows Powershell
    ```
 
-4. Install the required packages by running:
-
-   ```
+   4. Install the required packages by running:
+   ```bash
    pip install -r requirements.txt
    ```
 
-5. Execute the given code - just use one of the provided datasets and export a glyph. If you want to reproduce the Iris glyph, run the `example.py` script.
+4. Execute the given code. To generate the glyph or the projection of one of the provided datasets, run one of the examples, e.g. `example_glyph_iris.py`. The resulting `.off` or `.pdf` file will be saved in the current directory:
+```bash
+cd src
+python example_glyph_iris.py
+```
 
-6. Exit the virtual environment by running:
-
-   ```
-   deactivate
-   ```
+5. Exit the virtual environment by running:
+```bash
+deactivate
+```
 
 
 ### Covariance stability glyph:

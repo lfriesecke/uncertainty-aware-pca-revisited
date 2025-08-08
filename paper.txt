@@ -1,0 +1,3 @@
+Title: Uncertainty-Aware PCA Revisited
+Authors: Lukas Friesecke, Christian Braune, Christian Rössl, Holger Theisel
+OS: Linux, Windows, MacOS

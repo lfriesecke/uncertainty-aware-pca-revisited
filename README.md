@@ -44,7 +44,7 @@ git clone https://github.com/lfriesecke/uncertainty-aware-pca-revisited.git
    pip install -r requirements.txt
    ```
 
-4. Execute the given code. To generate the glyph or the projection of one of the provided datasets, run one of the examples, e.g. `example_glyph_iris.py`. The resulting `.off` or `.pdf` file will be saved in the current directory:
+4. Execute the given code. To generate the glyph or the projection of one of the provided datasets, run one of the examples, e.g. `example_glyph_iris.py`. The resulting `.off` or `.pdf` file will be saved to the current directory:
 ```bash
 cd src
 python example_glyph_iris.py
